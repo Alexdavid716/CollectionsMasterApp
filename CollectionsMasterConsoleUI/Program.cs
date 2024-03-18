@@ -68,16 +68,18 @@ namespace CollectionsMasterConsoleUI
 
             /*   Set Up   */
             //TODO: Create an integer List
-            
+            List<int> numberList = new List<int>();
 
             //TODO: Print the capacity of the list to the console
-            
+            Console.WriteLine($"List capacity: {numberList.Capacity}");
 
             //TODO: Populate the List with 50 random numbers between 0 and 50 you will need a method for this            
-            
+            PopulateList(numberList);
 
             //TODO: Print the new capacity
-            
+            Console.WriteLine($"List capacity after population: {numberList.Capacity}");
+
+           
 
             Console.WriteLine("---------------------");
 
@@ -104,10 +106,10 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("------------------");
 
             //TODO: Convert the list to an array and store that into a variable
-
+            int[] newArray = numberList.ToArray();
 
             //TODO: Clear the list
-
+            numberList.Clear();
 
             #endregion
 
@@ -116,7 +118,7 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("************Start Lists**************");
 
             
-            List<int> numberList = new List<int>();
+            
 
             
             Console.WriteLine($"List capacity: {numberList.Capacity}");
@@ -160,7 +162,7 @@ namespace CollectionsMasterConsoleUI
             Console.WriteLine("------------------");
 
             
-            int[] newArray = numberList.ToArray();
+            
 
             
             numberList.Clear();
